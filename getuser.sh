@@ -21,11 +21,11 @@
 #echo "there are $LINES users"
 file=/etc/passwd
 let num=0
-for I in `cat $file | grep bin/bash`;
+for I in `cat $file | grep bin/bash`
 do
     username=`echo "$I" | cut -d ":" -f1`
     userid=`echo "$I" | cut -d: -f3`
-    echo "Hello,$username,your UID is $userid"
+    echo "Hello $username,your UID is $userid"
     num=$[$num+1]         
 done                      
 echo "there are $num users"
