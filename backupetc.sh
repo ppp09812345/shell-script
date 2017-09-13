@@ -20,5 +20,5 @@ fi
 #     echo "/etc backup finished"
 # fi
 file="`date +%Y%m%d`_etc.tar.gz"
-tar -czvf /root/backup/$a /etc
+tar -zcvPf /root/backup/$file /etc
 echo -e '\033[1;37;42m/etc backup finished\033[0m'
