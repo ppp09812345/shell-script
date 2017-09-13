@@ -20,5 +20,6 @@ fi
 #     echo "/etc backup finished"
 # fi
 file="`date +%Y%m%d`_etc.tar.gz"
-tar -zcvPf /root/backup/$file /etc
+#tar -zcvPf /root/backup/$file /etc 如果要显示压缩信息用此命令 -P解决了绝对路径的报错
+tar -zcPf /root/backup/$file /etc
 echo -e '\033[1;37;42m/etc backup finished\033[0m'
