@@ -1,17 +1,5 @@
 #!/bin/bash
 
-eck_process(){
-tolprocess=`ps auxf|grep DisplayMa[nager]|wc -l`
- 
-#if [ "$tolprocess" -lt "1" ];then
-if [ "$tolprocess" -ge "1" ];then
-    echo 'process ok'
-else
-    echo 'fail'
-fi
-}
- 
- 
 check_log(){
 if [ -e /etc/syslog-ng/syslog-ng.conf ];then
     conlog=`cat '/etc/syslog-ng/syslog-ng.conf'|grep "10.70.72.253"|wc -l`
@@ -126,8 +114,7 @@ fi
 }
  
  
-echo '################### check process ###################'
-check_process
+
 echo '################### check syslog ####################'
 check_log
 echo '################### check cpuidle ###################'
