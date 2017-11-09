@@ -114,15 +114,15 @@ echo -e '\E[32m'"Kernel Release :" $tecreset $kernelrelease
 
 echo -e '\E[32m'"Hostname :" $tecreset $HOSTNAME
 
-
+#内网IP
 internalip=$(hostname -I)
 echo -e '\E[32m'"Internal IP :" $tecreset $internalip
 
-
+#公网IP
 externalip=$(curl -s ipecho.net/plain;echo)
 echo -e '\E[32m'"External IP : $tecreset "$externalip
 
-
+#DNS
 nameservers=$(cat /etc/resolv.conf | sed '1 d' | awk '{print $2}')
 echo -e '\E[32m'"Name Servers :" $tecreset $nameservers 
 
@@ -157,5 +157,5 @@ rm /tmp/who /tmp/ramcache /tmp/diskusage
 }
 fi
 shift $(($OPTIND -1))
-# shift命令用于对参数的移动(左移)。可以查看http://blog.csdn.net/zhu_xun/article/details/24796235
+# shift命令用于对参数的移动(左移)。
 #
