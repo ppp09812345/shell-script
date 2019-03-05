@@ -8,6 +8,7 @@
 # 1: System error
 # 2: Application error
 # 3: Network error
+#
 
 CUR_VER=""
 NEW_VER=""
