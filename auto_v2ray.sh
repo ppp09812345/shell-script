@@ -1,3 +1,4 @@
+#请基于ubuntu16.04使用
 #!/bin/bash
 
 cd
