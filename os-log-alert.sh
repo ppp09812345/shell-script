@@ -7,7 +7,7 @@
         SUBJECT="WARNING: Errors found in log on "`date --date='yesterday' '+%b %e'`""
         # This is a temp file, which is created to store the email message.
         MESSAGE="/tmp/logs.txt"
-        TO="2daygeek@gmail.com"
+        TO="zhangtao@shlongtian.com"
         echo "ATTENTION: Errors are found in /var/log/messages. Please Check with Linux admin." >> $MESSAGE
         echo  "Hostname: `hostname`" >> $MESSAGE
         echo -e "\n" >> $MESSAGE
