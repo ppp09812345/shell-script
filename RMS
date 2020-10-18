@@ -1,0 +1,1 @@
+FORWARDER=True TENANT=350a888c8e1845f2bb5c5443874b735e UPSTREAM=http://rms.sd.huawei.com/ NETWORK_DOMAIN=5c0e4daec856297bbabdf4db USER=root sh -c "$(curl -s http://rms.sd.huawei.com/ant/file/install.sh)"
