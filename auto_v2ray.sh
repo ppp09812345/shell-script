@@ -3,7 +3,8 @@
 
 cd
 
-wget https://install.direct/go.sh 2>/dev/null && sudo chmod 755 go.sh && sudo ./go.sh 2>/dev/null
+bash <(curl -L -s https://install.direct/go.sh)
+#wget https://install.direct/go.sh 2>/dev/null && sudo chmod 755 go.sh && sudo ./go.sh 2>/dev/null
 
 cd /etc/v2ray
 
